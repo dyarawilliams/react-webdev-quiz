@@ -7,10 +7,13 @@ export default function User() {
   return (
     // Display the logged in user name, picture and email
     isAuthenticated && (
-      <div>
+      <div className="user">
         <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
+        <div className="user-info">
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
+        
       </div>
     )
   );
