@@ -19,16 +19,18 @@ body {
 }
 
 .container {
-  height: 80vh;
-  width: 60vw;
-  margin: 4rem auto;
-  padding: 1rem;
-  border: 2px solid black;
-  border-radius: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .row {
   border: 2px solid black;
+  height: 80vh;
+  width: 70vw;
+  margin: 4rem auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .title {
@@ -44,6 +46,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.dummyText {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 3rem;
+  line-height: 1.7;
+}
 
 button {
   padding: 15px 30px;
@@ -55,13 +63,13 @@ button {
 
 img {
   margin-top: 1rem;
-  width: 70px;
+  width: 50px;
   border-radius: 50%;
 }
 
 
 .user-info {
-  font-size: 12px;
+  font-size: 0.8rem;
   color: white;
 }
 
@@ -71,14 +79,24 @@ img {
 }
 
 .quiz-container {
-  height: 100%;
-  margin: 1.5rem;
-  padding: 3rem;
+  position: relative;
+  height: 55vh;
+  margin: 1rem;
+  padding: 2rem;
   background-color: silver;
   border-radius: 10px;
 }
 
+.quiz-container h2 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.quiz-container p {
+  line-height: 1.7;
+}
+
 .footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: white;
 }

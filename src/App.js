@@ -20,6 +20,9 @@ function App() {
           <div className="container">
             <div className="row">
               <Title />
+              <div className="dummyText">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam consectetur sit quod magnam veniam, eaque quae! Soluta deleniti laborum amet? </p>
+              </div>
               <LoginButton />
             </div>
             <Footer />
@@ -27,7 +30,6 @@ function App() {
         ) : (
           <div className="container">
             <div className="row">
-              <Title />
               <User />
               <LogoutButton />
               <Quiz />
