@@ -15,8 +15,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  
 }
+
+.container {
+  height: 80vh;
+  width: 60vw;
+  margin: 4rem auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.row {
+  border: 2px solid black;
+}
+
 .title {
   border: 2px solid black;
   margin: 1rem;
@@ -30,14 +44,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.container {
-  height: 80vh;
-  width: 60vw;
-  margin: 4rem auto;
-  padding: 1rem;
-  border: 2px solid black;
-  border-radius: 10px;
-}
 
 button {
   padding: 15px 30px;
@@ -53,9 +59,6 @@ img {
   border-radius: 50%;
 }
 
-.row {
-  border: 2px solid black;
-}
 
 .user-info {
   font-size: 12px;
