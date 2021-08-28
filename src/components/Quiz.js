@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import LogoutButton from './LogoutButton';
+import User from './User'
 
 const Quiz = () => {
     const questions = [
@@ -30,8 +32,41 @@ const Quiz = () => {
 
     return (
         <div className="quiz-container">
-            <h2>THE QUESTIONS GOES HERE</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, vero eius dignissimos, eaque tempore quae possimus saepe vel nam accusamus nesciunt repellendus? Nulla dicta explicabo veritatis non esse beatae blanditiis accusamus inventore, doloribus delectus suscipit labore cum voluptates assumenda iure mollitia, consequuntur eaque maiores voluptatibus repudiandae laborum! Ipsam suscipit iure ratione pariatur quae recusandae molestias dignissimos praesentium neque dicta doloribus </p>
+            <div className="hud">
+                <div id="hud-item">
+                    <p id="progressText" className="hud-info">Question</p>
+                    <div id="progressBar"></div>
+                </div>
+                <div id="hud-item">
+                    <p className="hud-info">
+                        <User />
+                        <LogoutButton /> 
+                    </p>
+                </div>
+                <div id="hud-item">
+                    <p className="hud-info">Score</p>
+                    <span>0</span>
+                </div>
+            </div>
+            <div className="question-container">
+                <h2 id="question">THE QUESTION GOES HERE</h2>
+                <div className="answer-container">
+                    <p className="answer-choice">a</p>
+                    <p className="answer-info">Answer #1</p>
+                </div>
+                <div className="answer-container">
+                    <p className="answer-choice">b</p>
+                    <p className="answer-info">Answer #2</p>
+                </div>
+                <div className="answer-container">
+                    <p className="answer-choice">c</p>
+                    <p className="answer-info">Answer #3</p>
+                </div>
+                <div className="answer-container">
+                    <p className="answer-choice">d</p>
+                    <p className="answer-info">Answer #4</p>
+                </div>
+            </div>
         </div>
     )
 };

@@ -2,8 +2,6 @@ import './App.css';
 import { useAuth0 } from '@auth0/auth0-react';
 import Title from './components/Title';
 import LoginButton from './components/LoginButton';
-import LogoutButton from './components/LogoutButton';
-import User from './components/User';
 import Quiz from './components/Quiz';
 import Footer from './components/Footer'
 
@@ -30,8 +28,6 @@ function App() {
         ) : (
           <div className="container">
             <div className="row">
-              <User />
-              <LogoutButton />
               <Quiz />
             </div>
             <Footer />
