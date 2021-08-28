@@ -17,16 +17,21 @@ function App() {
   return (
     <div className="App">
         {!isAuthenticated ? (
-          <div className="main">
-            <Title />
-            <LoginButton />
+          <div className="container">
+            <div className="row">
+              <Title />
+              <LoginButton />
+            </div>
+            <Footer />
           </div>
         ) : (
-          <div className="profile-info">
-            <Title />
-            <User />
-            <LogoutButton />
-            <Quiz />
+          <div className="container">
+            <div className="row">
+              <Title />
+              <User />
+              <LogoutButton />
+              <Quiz />
+            </div>
             <Footer />
           </div>
         )}

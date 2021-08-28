@@ -9,17 +9,34 @@ body {
 }
 
 .App {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.title {
+  border: 2px solid black;
+  margin: 1rem;
 }
 
-h1 {
-  font-size: 4rem;
+.title h1 {
+  font-size: 3.5rem;
   background-image: linear-gradient(to right,black, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.container {
+  height: 80vh;
+  width: 60vw;
+  margin: 4rem auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 button {
@@ -36,6 +53,10 @@ img {
   border-radius: 50%;
 }
 
+.row {
+  border: 2px solid black;
+}
+
 .user-info {
   font-size: 12px;
   color: white;
@@ -46,7 +67,7 @@ img {
   font-size: 10px;
 }
 
-.container-quiz {
+.quiz-container {
   height: 100%;
   margin: 1.5rem;
   padding: 3rem;

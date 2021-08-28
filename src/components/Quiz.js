@@ -29,7 +29,7 @@ const Quiz = () => {
     ];
 
     return (
-        <div className="container-quiz">
+        <div className="quiz-container">
             <h2>THE QUESTIONS TO THE QUIZ GOES HERE</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, vero eius dignissimos, eaque tempore quae possimus saepe vel nam accusamus nesciunt repellendus? Nulla dicta explicabo veritatis non esse beatae blanditiis accusamus inventore, doloribus delectus suscipit labore cum voluptates assumenda iure mollitia, consequuntur eaque maiores voluptatibus repudiandae laborum! Ipsam suscipit iure ratione pariatur quae recusandae molestias dignissimos praesentium neque dicta doloribus ipsum enim libero eligendi soluta adipisci animi incidunt excepturi repudiandae voluptatum, iusto minima. Ad ipsum ducimus, quasi, veritatis quae porro culpa aperiam illum assumenda</p>
         </div>
