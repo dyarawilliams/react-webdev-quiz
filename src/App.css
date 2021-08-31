@@ -100,7 +100,11 @@ img {
 
 @media only screen and (max-width: 425px) {
   .quiz-container .hud {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .user-info {
+    font-size: 0.5rem;
   }
 }
 

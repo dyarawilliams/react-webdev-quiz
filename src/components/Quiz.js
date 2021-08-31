@@ -56,7 +56,6 @@ const Quiz = () => {
                         <p className="answer-container">{answerOption.option}</p> 
                     ))}
                 </div>
-                
             </div>
         </div>
     )
