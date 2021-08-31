@@ -18,10 +18,10 @@ function App() {
           <div className="container">
             <div className="row">
               <Title />
-              <div className="dummyText">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam consectetur sit quod magnam veniam, eaque quae! Soluta deleniti laborum amet? </p>
+              <div className="main">
+                <p>Welcome.! <br /> This is the introduction section ... Maybe the direction to the game will go here. This has been a fun journery. <br /> Let's Celebrate.! </p>
+                <LoginButton />
               </div>
-              <LoginButton />
             </div>
             <Footer />
           </div>
