@@ -25,17 +25,23 @@ body {
 
 .row {
   border: 2px solid black;
-  height: 80vh;
+  height: 100%;
   width: 80vw;
   margin: 4rem auto;
   padding: 1rem;
   border: 2px solid black;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
   border: 2px solid black;
   margin: 1rem;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .title h1 {
@@ -46,11 +52,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.dummyText {
-  position: relative;
+.main {
   font-size: 1.5rem;
   padding: 3rem;
-  line-height: 1.7;
+  line-height: 2.5;
 }
 
 button {
@@ -68,18 +73,10 @@ img {
 }
 
 
-.user-info {
-  font-size: 0.8rem;
-  color: white;
-}
-
-.user-info p {
-  margin-bottom: .5rem;
-  font-size: 10px;
-}
 
 .quiz-container {
   height: 100%;
+  width: 100%;
 }
 
 .quiz-container .hud {
@@ -91,10 +88,26 @@ img {
   font-weight: 700;
 }
 
+.user-info {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.user-info p {
+  margin-bottom: .5rem;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .quiz-container .hud {
+    flex-direction: column;
+  }
+}
+
 .question-container {
   position: relative;
   height: 100%;
-  max-height: 500px;
+  max-height: 525px;
   margin: 1rem;
   padding: 2rem;
   background-color: silver;
@@ -102,7 +115,7 @@ img {
 }
 
 #question {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   background: linear-gradient(to right, #420039, #932F6D);
   background-clip: text;
   -webkit-background-clip: text;
@@ -112,22 +125,37 @@ img {
 
 .answer-container {
   width: 100%;
-  display: flex;
-  font-size: 1.8rem;
-  background-color: white;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
   border: 0.1rem solid rgba(151, 36, 107, 0.8);
-  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
+@media only screen and (max-width: 520px){
+  .question {
+    font-size: 1rem;
+  }
+
+  .answer-container {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
 }
 
 .answer-container:hover {
   cursor: pointer;
+  background-color: #932F6D;
 }
 
 .answer-choice {
   padding: 1rem;
   background-color: #932F6D;
   width: 10%;
+}
+
+.answer-info {
+  padding: 1rem;
 }
 
 .footer {

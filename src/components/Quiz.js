@@ -9,7 +9,8 @@ const Quiz = () => {
             options: [
                 { option: 'Hyperlinks Text Mark Language', iscorrect: false },
                 { option: 'Hyper Text Markup Language', iscorrect: true },
-                { option: 'Hyper Tag Markup Language', iscorrect: false }
+                { option: 'Hyper Tag Markup Language', iscorrect: false },
+                { option: 'Hyperlinks Tag Markup Language', iscorrect: false }
             ]
         },
         {
@@ -34,7 +35,7 @@ const Quiz = () => {
         <div className="quiz-container">
             <div className="hud">
                 <div id="hud-item">
-                    <p id="progressText" className="hud-info">Question</p>
+                    <p id="progressText" className="hud-info">Question 1<span>/{questions.length}</span> </p>
                     <div id="progressBar"></div>
                 </div>
                 <div id="hud-item">
@@ -49,23 +50,13 @@ const Quiz = () => {
                 </div>
             </div>
             <div className="question-container">
-                <h2 id="question">THE QUESTION GOES HERE</h2>
-                <div className="answer-container">
-                    <p className="answer-choice">a</p>
-                    <p className="answer-info">Answer #1</p>
+                <h2 id="question">{questions[0].question}</h2>
+                <div className="answer-section">
+                    { questions[0].options.map((answerOption) => (
+                        <p className="answer-container">{answerOption.option}</p> 
+                    ))}
                 </div>
-                <div className="answer-container">
-                    <p className="answer-choice">b</p>
-                    <p className="answer-info">Answer #2</p>
-                </div>
-                <div className="answer-container">
-                    <p className="answer-choice">c</p>
-                    <p className="answer-info">Answer #3</p>
-                </div>
-                <div className="answer-container">
-                    <p className="answer-choice">d</p>
-                    <p className="answer-info">Answer #4</p>
-                </div>
+                
             </div>
         </div>
     )
