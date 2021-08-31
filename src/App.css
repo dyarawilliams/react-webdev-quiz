@@ -80,7 +80,6 @@ img {
 }
 
 .quiz-container .hud {
-  border: 2px solid blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,9 +87,12 @@ img {
   font-weight: 700;
 }
 
-.user-info {
-  font-size: 0.8rem;
-  color: white;
+#hud-item {
+  padding-bottom: 0.5rem;
+}
+
+.hud-info {
+font-size: 0.8rem;
 }
 
 .user-info p {
@@ -98,15 +100,6 @@ img {
   font-size: 10px;
 }
 
-@media only screen and (max-width: 425px) {
-  .quiz-container .hud {
-    flex-direction: column-reverse;
-  }
-
-  .user-info {
-    font-size: 0.5rem;
-  }
-}
 
 .question-container {
   position: relative;
@@ -125,6 +118,20 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .quiz-container .hud {
+    flex-direction: column-reverse;
+  }
+
+  .user-info {
+    font-size: 0.5rem;
+  }
+
+  #question {
+    font-size: 1.5rem;
+  }
 }
 
 .answer-container {
